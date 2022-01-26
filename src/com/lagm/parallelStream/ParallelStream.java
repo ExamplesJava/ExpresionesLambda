@@ -5,9 +5,11 @@ import java.util.List;
 
 public class ParallelStream {
 	/* Puede mejorar/rendimiento de algunas aplicaciones. 
-	 * Abuscar del ParallelStream no es recomendable especialmente al trabajar en aplicaciones con Java EE container */
+	 * Abuscar del ParallelStream no es recomendable especialmente al trabajar en aplicaciones con Java EE container.
+	 * Preferencia en procesos de tipo batch o aplicaciones de escritorio */
 	
 	// Caso de estudio: https://www.overops.com/blog/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/
+	
 	List<Integer> numeros;
 
 	public void llenar() {
