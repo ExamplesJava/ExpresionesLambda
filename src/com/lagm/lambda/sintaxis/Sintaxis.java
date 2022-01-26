@@ -2,6 +2,11 @@ package com.lagm.lambda.sintaxis;
 
 public class Sintaxis {
 	
+	public double probarSintaxis0() {
+		Operacion operacion = (x, y) -> (x + y) / 2;
+		return operacion.calcularPromedio(2, 3);
+	}
+	
 	public double probarSintaxis() {
 		Operacion operacion = (double x, double y) -> (x + y) / 2;
 		return operacion.calcularPromedio(2, 3);
@@ -35,6 +40,7 @@ public class Sintaxis {
 
 	public static void main(String[] args) {
 		Sintaxis sintaxis = new Sintaxis();
+		System.out.println(sintaxis.probarSintaxis0());
 		System.out.println(sintaxis.probarSintaxis());
 		System.out.println(sintaxis.probarSintaxis2());
 		System.out.println(sintaxis.probarSintaxis3());
