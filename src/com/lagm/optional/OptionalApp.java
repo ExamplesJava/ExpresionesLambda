@@ -4,6 +4,7 @@ import java.util.Optional;
 
 public class OptionalApp {
 	/* Permite lidiar con los errores de NullPointerException */
+	// No usar en aplicaciones críticas en rendimiento ya que es un poco costoso
 	public void probar1(String valor) {
 		System.out.println("\nMetodo combinado");
 		Optional<String> optionalValor = Optional.ofNullable(valor);
