@@ -3,7 +3,8 @@ package com.lagm.referenciasDeMetodos;
 import java.util.Arrays;
 
 public class MeRefApp {
-	
+	// Las referencias a métodos no aceptan el paso de parámetros
+	// Hay que apoyarse en interfaces funcionales
 	public static void referenciarMetodoStatic() {
 		System.out.println("Método referido static");
 	}
